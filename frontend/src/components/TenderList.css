@@ -1,0 +1,150 @@
+.tender-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tender-list-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+  color: #666;
+  gap: 12px;
+  font-size: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tender-list-status.error {
+  color: #c0392b;
+}
+
+.tender-list-status span {
+  font-size: 2rem;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 4px solid #e0e0e0;
+  border-top: 4px solid #0078d4;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.tender-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.1s;
+  border-left: 4px solid #e0e0e0;
+}
+
+.tender-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+  border-left-color: #0078d4;
+}
+
+.tender-card:focus {
+  outline: 2px solid #0078d4;
+  outline-offset: 2px;
+}
+
+.tender-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.tender-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.score-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.score-high {
+  background: #d4edda;
+  color: #155724;
+}
+
+.score-medium {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.score-low {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.score-none {
+  background: #f8f9fa;
+  color: #6c757d;
+}
+
+.tender-card-meta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  font-size: 0.82rem;
+  color: #666;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.category-tag {
+  background: #e8f0fe;
+  color: #1a56db;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.78rem;
+}
+
+.tender-description {
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.opportunity-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.opportunity-tag {
+  background: #0078d4;
+  color: white;
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
